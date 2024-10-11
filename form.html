@@ -1,0 +1,74 @@
+<html>
+    <head>
+        <title>Website Vulnerability Scanner</title>
+        <style>
+            body {
+                font-family: 'Courier New', monospace;
+                background-color: #0b0b0b;
+                color: #33ff33;
+                margin: 0;
+                padding: 20px;
+            }
+            h1 {
+                color: #33ff33;
+                text-align: center;
+                text-shadow: 0 0 10px #00ff00;
+            }
+            form {
+                background: #1c1c1c;
+                padding: 20px;
+                border-radius: 5px;
+                box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+            }
+            label {
+                font-weight: bold;
+            }
+            input[type="text"] {
+                width: 100%;
+                padding: 10px;
+                margin: 10px 0;
+                border: 1px solid #33ff33;
+                border-radius: 5px;
+                background-color: #1c1c1c;
+                color: #33ff33;
+            }
+            input[type="submit"] {
+                background-color: #33ff33;
+                color: black;
+                padding: 10px 15px;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+            input[type="submit"]:hover {
+                background-color: #45ff45;
+            }
+            .results {
+                margin-top: 20px;
+                background: #1c1c1c;
+                padding: 20px;
+                border-radius: 5px;
+                box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+            }
+            ul {
+                list-style-type: none;
+                padding: 0;
+            }
+            li {
+                margin: 10px 0;
+                padding: 10px;
+                border: 1px solid #33ff33;
+                border-radius: 5px;
+                background-color: #0b0b0b;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Website Vulnerability Scanner</h1>
+        <form action="/scan" method="get">
+            <label for="url">Enter website URL:</label><br>
+            <input type="text" id="url" name="url" required><br><br>
+            <input type="submit" value="Scan">
+        </form>
+    </body>
+</html>
